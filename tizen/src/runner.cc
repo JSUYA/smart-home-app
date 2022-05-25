@@ -120,8 +120,8 @@ class App {
           elm_image_file_set(image, buf, NULL);
           elm_image_aspect_fixed_set(image, true);
           elm_box_pack_end(boxsub, image);
-          evas_object_size_hint_min_set(image, ELM_SCALE_SIZE(320),
-                                        ELM_SCALE_SIZE(450));
+          evas_object_size_hint_min_set(image, ELM_SCALE_SIZE(300),
+                                        ELM_SCALE_SIZE(400));
           evas_object_show(image);
         }
         evas_object_show(gl_box);

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.domus.smarthome.smart_home_app" version="1.0.0" api-version="4.0" xmlns="http://tizen.org/ns/packages">
+    <profile name="tv"/>
+    <ui-application appid="com.domus.smarthome.smart_home_app" exec="runner" type="capp" multiple="false" nodisplay="false" taskmanage="true" hw-acceleration="on">
+        <label>smart_home_app</label>
+        <icon>ic_launcher.png</icon>
+    </ui-application>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+</manifest>

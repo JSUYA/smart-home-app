@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Hi, Lex',
+                        'Hi, Flutter!!',
                         style: Theme.of(context).textTheme.headline1,
                       ),
                       Container(
@@ -50,7 +50,6 @@ class HomeScreen extends StatelessWidget {
                           borderRadius:
                               BorderRadius.all(Radius.elliptical(45, 45)),
                         ),
-
                         child: IconButton(
                           splashRadius: 25,
                           icon: const Icon(
@@ -59,9 +58,12 @@ class HomeScreen extends StatelessWidget {
                           ),
                           onPressed: () {
                             // Navigator.of(context).pushNamed(EditProfile.routeName);
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => const EditProfile(),));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const EditProfile(),
+                                ));
                           },
-
                         ),
                       ),
                     ],
@@ -102,8 +104,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               drawer: SizedBox(
-                 width: getProportionateScreenWidth(270),
-                  child: const Menu()),
+                  width: getProportionateScreenWidth(270), child: const Menu()),
               body: TabBarView(
                 children: <Widget>[
                   Body(
